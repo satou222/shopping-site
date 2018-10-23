@@ -139,10 +139,6 @@ footer .container {
   display: none;
 }
 
-// .page {
-//   text-align: center;
-//   border-bottom: solid 1px #000000;
-// }
 @media (min-width: 550px) {
   .sp_top {
     display: none;
@@ -205,11 +201,11 @@ footer .container {
   }
   .itemserch {
     display: block;
-    padding: 40px 0 40px 14px;
+    padding: 40px 0 40px 0px;
   }
   .side-search {
     display: block;
-    padding: 5px 0 3px 0px;
+    padding: 14px 0 14px 0px;
     background-color: #fff;
   }
 }
@@ -253,13 +249,15 @@ ul {
 }
 
 #sidemenu p {
-  font-size: 1.4rem;
-  font-weight: bold; // margin: 10px 0 0 0;サーチ画面で悪影響出るため削除
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.7rem; // margin: 10px 0 0 0;サーチ画面で悪影響出るため削除
 }
 
 .center {
   text-align: center;
   padding-bottom: 10px;
+  padding: 24px 0 10px 0;
 }
 
 .about-box {
@@ -284,19 +282,22 @@ ul {
   display: flex;
   flex-wrap: wrap;
   flex: 1; // justify-content: center;
-  background-color: $baseColor;
+  background-color: #fff;
 }
 
 .item-f {
   width: 50%;
   border: 1px solid $baseColor;
   box-sizing: border-box;
+  padding: 10px;
 }
 
 .item-f p {
-  font: 10px bold;
-  padding: 0 8px;
-  background-color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0px 8px 16px 8px;
+  color: black;
+  line-height: 1.3rem;
 }
 
 
@@ -305,16 +306,25 @@ ul {
 @media (min-width: 550px) {
   .item-f {
     width: 33%;
+    padding-bottom: 10px;
+  }
+  .item-f p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0px 8px 16px 8px;
+    color: black;
+    line-height: 1.6rem;
   }
   .ab-box {
     width: 100%;
-    padding: 10px;
+    padding: 0px 10px 0 10px;
   }
 
   .item-img {
     flex: 1 1 auto;
-    padding: 6px;
+    padding: 10px;
     box-sizing: border-box;
+    background-color: #fff;
   }
   #sidemenu .side-item {
     margin: 0;
@@ -325,8 +335,8 @@ ul {
 
 // カルーセルのボタン変更
 .owl-theme .owl-dots .owl-dot span {
-  width: 20px;
-  height: 5px;
+  width: 25px;
+  height: 2px;
   border-radius: 0;
 }
 
@@ -336,7 +346,7 @@ ul {
 }
 
 .owl-theme .owl-nav.disabled+.owl-dots {
-  margin-top: 10px;
+  margin-top: 2px;
   text-align: left;
 }
 
@@ -351,34 +361,45 @@ ul {
   padding: 10px 0;
 }
 
+.wrap-icon {
+  text-align: center;
+}
+
 .item-icon {
-  padding: 16px 0 10px 100px;
+  padding: 16px 0 10px 0;
 }
 
 .shop p {
+  font-size: 1.4rem;
   font-weight: bold;
-  padding-bottom: 16px;
+  padding-bottom: 10px;
 }
 
 .otodo {
   background-color: #ffffff;
   margin-bottom: 6px;
   padding-left: 18px;
+  padding-bottom: 18px;
 }
 
 .kessai {
   background-color: #ffffff;
   margin-bottom: 6px;
   padding-left: 18px;
+  padding-bottom: 18px;
 }
 
 .brow {
   color: #887f69;
   font-weight: bold;
   font-size: 2rem;
-  padding: 5px;
+  padding: 8px 0 0 0;
   box-sizing: border-box;
   margin: 0;
+}
+
+p.brow {
+  font-size: 2rem;
 }
 
 p {
@@ -398,9 +419,11 @@ p {
   .otodo {
     flex: 1;
     margin-right: 11px;
+    padding-top: 15px;
   }
   .kessai {
     flex: 1;
+    padding-top: 15px;
   }
   .item-icon {
     display: none;
@@ -414,8 +437,9 @@ p {
   background-position: 10px center;
   background-color: #e8e4da;
   color: #887f69;
-  padding: 5px 0 5px 35px;
+  padding: 12px 0 12px 35px;
   font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .sp-list-img,
@@ -571,7 +595,9 @@ th.sikaku {
   background-position: center left 10px;
   text-align: center;
   border-bottom: 1px solid #e3e8cf;
-  padding: 18px 0;
+  border-top: 1px solid #e3e8cf;
+  margin: 20px 0 0 0;
+  padding: 14px 0;
 }
 
 .quant {
@@ -580,7 +606,7 @@ th.sikaku {
   background-position: center left 10px;
   text-align: center;
   border-bottom: 1px solid #e3e8cf;
-  padding: 18px 0 0 44px;
+  padding: 14px 0;
 }
 
 p.tax {
@@ -594,6 +620,7 @@ p.tax {
 
 .sen {
   font-size: 1.5rem;
+  font-weight: bold;
   color: red;
 }
 
@@ -607,6 +634,13 @@ p.tax {
   color: #fff;
   border: 1px solid #e8e4da;
   font-size: 2rem;
+}
+
+input[type="text"] {
+  padding: 0;
+  font-size: 1.4rem;
+  height: 32px;
+  margin: 0;
 }
 
 .add {
@@ -632,7 +666,12 @@ p.tax {
     text-align: right;
     width: 50%;
     padding: 0;
+    padding-top: 16px;
   }
+}
+
+.setumei {
+  padding-top: 23px;
 }
 
 .setumei h4 {
